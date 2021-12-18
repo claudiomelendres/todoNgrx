@@ -19,3 +19,12 @@ export const eliminar = createAction(
   '[TODO] eliminar Todo',
   props<{id: number}>()
 );
+
+export const todos = createAction(
+  '[TODO] eliminar Todo',
+  props<{estado: boolean}>()
+);
+
+export const borrarCompletados = createAction(
+  '[TODO] borrar Completatos'
+);
