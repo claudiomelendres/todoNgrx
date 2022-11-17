@@ -1,23 +1,21 @@
 <section class="todoapp">
-
+  <button (click)="addTasks()">Fill tasks</button>
+  <br />
+  <button (click)="selectRandom()">Select Random</button>
   <app-todo-add></app-todo-add>
   <!-- This section should be hidden by default and shown when there are todos -->
   <section class="main">
-
-    <input id="toggle-all"
-           class="toggle-all"
-           (click)="toggleAll()"
-           type="checkbox">
-
+    <input
+      id="toggle-all"
+      class="toggle-all"
+      (click)="toggleAll()"
+      type="checkbox"
+    />
 
     <label for="toggle-all">Mark all as complete</label>
 
-  <app-todo-list></app-todo-list>
-
+    <app-todo-list></app-todo-list>
   </section>
 
   <app-todo-footer></app-todo-footer>
-
 </section>
-
-
